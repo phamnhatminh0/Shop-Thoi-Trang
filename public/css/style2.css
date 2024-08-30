@@ -1,0 +1,111 @@
+/* Reset một số thuộc tính mặc định của HTML */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tạo một container tương tự như của Bootstrap */
+.chitiet_container {
+    width: 100%;
+    max-width: 1140px;
+    /* Giống với container lớn nhất của Bootstrap */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tạo flex layout cho chi tiết sản phẩm */
+.chitiet_product-details {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép wrap nội dung khi màn hình nhỏ */
+}
+
+/* Định dạng phần hình ảnh sản phẩm */
+.chitiet_product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chitiet_product-image img {
+    width: 100%;
+    max-width: 500px;
+    /* Tăng kích thước tối đa của hình ảnh */
+    height: auto;
+    /* Đảm bảo hình ảnh tỷ lệ chính xác */
+}
+
+/* Định dạng phần thông tin sản phẩm */
+.chitiet_product-info {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Định dạng tiêu đề sản phẩm */
+.chitiet_product-info h1 {
+    font-size: 28px;
+    /* Tăng kích thước tiêu đề */
+    margin: 0 0 10px;
+}
+
+/* Định dạng giá */
+.chitiet_price {
+    font-size: 24px;
+    /* Tăng kích thước giá */
+    color: #007bff;
+    margin-bottom: 10px;
+    /* Thêm khoảng cách dưới giá */
+}
+
+/* Định dạng mô tả */
+.chitiet_description {
+    font-size: 18px;
+    /* Tăng kích thước mô tả */
+    margin-bottom: 20px;
+}
+
+/* Định dạng thông tin bổ sung */
+.chitiet_quantity,
+.chitiet_promotion-price,
+.chitiet_hot-product,
+.chitiet_category,
+.chitiet_brand {
+    font-size: 18px;
+    /* Tăng kích thước các thông tin bổ sung */
+    margin-bottom: 10px;
+}
+
+/* Định dạng giá khuyến mãi */
+.chitiet_promotion-price {
+    color: red;
+}
+
+/* Định dạng sản phẩm hot */
+.chitiet_hot-product {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Định dạng nút thêm vào giỏ hàng */
+.chitiet_add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    /* Tăng kích thước padding */
+    font-size: 20px;
+    /* Tăng kích thước font */
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    /* Căn chỉnh nút về phía bên trái */
+}
+
+.chitiet_add-to-cart:hover {
+    background-color: #0056b3;
+}
